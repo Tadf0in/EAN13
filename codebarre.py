@@ -171,8 +171,7 @@ def dessine(code:str) -> None:
 
 
 if __name__ == '__main__':
-    # num = input("Entrez un numéro à 12 chiffres : ")
-    num = '761234567890'
+    num = input("Entrez un numéro à 12 chiffres : ")
 
     check_digit = modulo_check(num)
     print("Check digit : ", check_digit)
