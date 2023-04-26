@@ -35,7 +35,7 @@ gauche_impair = [
     '0110011',
     '0011011',
     '0100001',
-    '00111101',
+    '0011101',
     '0111001',
     '0000101',
     '0010001',
@@ -172,6 +172,9 @@ def dessine(code:str) -> None:
 
 if __name__ == '__main__':
     num = input("Entrez un numéro à 12 chiffres : ")
+    while len(num) != 12:
+        print("Ce numéro n'a pas 12 chiffres")
+        num = input("Entrez un numéro à 12 chiffres : ")
 
     check_digit = modulo_check(num)
     print("Check digit : ", check_digit)
