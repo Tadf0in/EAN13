@@ -99,10 +99,8 @@ def modulo_check(num):
         else:
             out += 3*int(e)
 
-    ten = 10
-    while out > ten:
-        ten += 10
-    return ten - out
+    out = 10 - out % 10
+    return out if out != 10 else 0
 
 
 def codebarre(num:str) -> str:
