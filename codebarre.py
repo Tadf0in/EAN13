@@ -178,7 +178,6 @@ if __name__ == '__main__':
 
     code = codebarre(num)
     print(code)
-    print(len(code))
 
     dessine(code)
 
