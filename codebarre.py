@@ -148,7 +148,6 @@ def dessine(code:str) -> None:
     t.goto(-220, 100)
     t.pd()
 
-    haut = True
     for i, bit in enumerate(code):
 
         # Si Caractère de début, de milieu ou de fin alors trait plus long
